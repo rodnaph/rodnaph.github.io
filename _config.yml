@@ -1,11 +1,8 @@
-# Dependencies
-markdown:         redcarpet
-pygments:         true
 
-# Permalinks
+markdown:         redcarpet
+highlighter:      pygments
 permalink:        pretty
 
-# Setup
 title:            Tech Stuff
 tagline:          Tales from the trenches 
 url:              http://blog.pu-gh.com
