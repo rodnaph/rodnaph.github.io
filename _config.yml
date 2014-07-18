@@ -6,17 +6,13 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
+title:            Tech Stuff
+tagline:          Tales from the trenches 
+url:              http://blog.pu-gh.com
 paginate:         1
 baseurl:          /
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           Rhodri Pugh
+  url:            https://twitter.com/rodnaph
+  email:          rod@pu-gh.com
 
-# Custom vars
-version:          1.0.0
-github:
-  repo:           https://github.com/poole/poole
