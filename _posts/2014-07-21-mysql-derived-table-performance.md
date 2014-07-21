@@ -86,6 +86,6 @@ previously, it's just a technique I knew that gave me the results I needed. But
 I'm glad I've got another tool to work with when I approach these same
 situations in the future.
 
-Of course, if there's something I've missed or a metter way to approach this 
+Of course, if there's something I've missed or a better way to approach this 
 please [let me know](https://twitter.com/rodnaph)!
 
