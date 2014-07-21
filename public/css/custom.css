@@ -1,0 +1,11 @@
+
+.nav {
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav li {
+    margin-left: 10px;
+    float: right;
+}
+
