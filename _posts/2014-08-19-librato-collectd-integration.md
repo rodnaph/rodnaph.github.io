@@ -11,13 +11,13 @@ those services. Something we've been missing though is some server level
 information that isn't provided with [Cloudwatch](http://aws.amazon.com/cloudwatch/) (specifically 
 disk space and memory). I've been meaning to try using [collectd](https://collectd.org/) 
 to collect this and then push it off to Librato somehow. Then luckily the Librato team announced 
-[native integration](http://blog.librato.com/posts/turnkey-server-monitoring-beta)!
+[native integration](http://blog.librato.com/posts/turnkey-server-monitoring-beta)...
 
 Just what we needed!
 
 ## Ansible Configuration
 
-Luckily Collectd was available throught the package manager on our current
+Luckily Collectd was available through the package manager on our current
 distribution, so I set right to creating an Ansible role for it...
 
 {% highlight yaml %}
