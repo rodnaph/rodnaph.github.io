@@ -5,7 +5,7 @@ title: jQuery UI onChangeMonthYear Event Gotchas
 
 Today involved fixing a bug where I have a some date fields that use the
 **datepicker** component from jQuery UI, and I've added some helper links next
-to them when you can set the year to 3, 6 12, etc months in the future. The bug
+to them when you can set the date to 3, 6 12, etc months in the future. The bug
 reported was that these links only work the _second time_ they are clicked.
 Hmmm...
 
@@ -126,4 +126,28 @@ there was no obvious way to do so.
 I'm aware of Javascript scope rules and the fact my **picker** and **current**
 vars are actually visible to the entire function, but I prefer to ignore
 particular gotcha in favour of readability.
+
+## Update
+
+After writing this I realised that my second gotcha (while valid) is actually
+calling the **getDate** API unnecessarily. So I've cleaned it up a little...
+
+{% highlight javascript %}
+var onChangeMonthYearHandler = function(year, month, inst)
+{
+    var isVisible = $(inst.dpDiv).is(':visible');
+
+    if (isVisible) {
+        var current = new Date();
+
+        current.setDate(1);
+        current.setYear(year);
+        current.setMonth(month - 1);
+
+        $(this).datepicker('setDate', current);
+    }
+};
+{% endhighlight %}
+
+Which then avoids the second gotcha entirely!
 
